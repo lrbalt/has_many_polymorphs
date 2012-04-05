@@ -18,7 +18,7 @@ module ActiveRecord #:nodoc:
         end
 
 	class_attribute :reflections
-	self.reflections = reflection
+	self.reflections = { name => reflection }
 
 	# DEPRICATED for Rails 3.2
         #write_inheritable_hash :reflections, name => reflection
